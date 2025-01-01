@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center"
+android:padding="16dp">
+
+
+
+    <TextView
+        android:id="@+id/hotel_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of Hotels!"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:padding="100dp"
+        />
+
+
+    <!--Hostel Name-->
+<Button
+    android:id="@+id/hotelOne"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:padding="18dp"
+    android:onClick="viewHotel1"
+    android:text="Hotel 1"
+
+    />
+
+<!--Hostel Address-->
+<Button
+    android:id="@+id/hotelTwo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:padding="18dp"
+    android:onClick="viewHotel2"
+    android:text="Hotel 2"
+
+    />
+
+<!--Hostel Cost-->
+<Button
+
+    android:id="@+id/hotelThree"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:padding="18dp"
+    android:onClick="viewHotel3"
+    android:text="Hotel 3"
+
+    />
+
+</LinearLayout>

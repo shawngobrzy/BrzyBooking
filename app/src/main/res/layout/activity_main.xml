@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!--Hostel Name-->
+
+    <TextView
+        android:id="@+id/hostel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brzy Booking"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:padding="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/hostel_image"
+        app:layout_constraintVertical_bias="0.45"
+
+        />
+
+    <!--Hostel Imagine-->
+
+
+    <ImageView
+        android:id="@+id/hostel_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/brzybookinglogo"
+        android:scaleType="centerCrop"
+        android:contentDescription="Hostel Image"
+        app:layout_constraintTop_toBottomOf="@id/hostel_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/hotelList"
+        android:layout_marginTop="2dp"
+
+        />
+
+    <!--Button for Details-->
+
+    <Button
+        android:id="@+id/hotelList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:padding="18dp"
+        android:onClick="viewHotelList"
+        android:text="Hotel List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/hostel_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
